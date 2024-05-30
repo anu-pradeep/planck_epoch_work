@@ -79,7 +79,7 @@ class registerState extends State<register>
       obscureText: showpass,
       obscuringCharacter: "*",
     decoration: InputDecoration(
-    prefixIcon: const Icon(Icons.lock,color: Colors.lightBlue,),
+    prefixIcon: const Icon(Icons.lock,color: Colors.green,),
     suffixIcon: IconButton(
       onPressed: () {
         setState(() {
