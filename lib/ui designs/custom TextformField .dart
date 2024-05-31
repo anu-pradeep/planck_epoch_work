@@ -1,17 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatefulWidget {
   final String label;
   final bool iconVisible;
-  const CustomTextField({super.key, required this.label, required this.iconVisible});
+
+  const CustomTextField({super.key, required this.label, required this.iconVisible, });
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
 }
 
 class _CustomTextFieldState extends State<CustomTextField> {
-  bool showpass = true;
+  bool showPass = true;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -41,14 +41,14 @@ class _CustomTextFieldState extends State<CustomTextField> {
           child: IconButton(
             onPressed: () {
               setState(() {
-                if (showpass) {
-                  showpass = false;
+                if (showPass) {
+                  showPass = false;
                 } else {
-                  showpass = true;
+                  showPass = true;
                 }
               });
             },
-            icon: Icon(showpass == true
+            icon: Icon(showPass == true
                 ? Icons.visibility_off
                 : Icons.visibility),
             color: Colors.lightBlue,
