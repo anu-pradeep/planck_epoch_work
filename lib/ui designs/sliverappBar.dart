@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-class CustomSliverAppbar extends StatelessWidget {
-   final List<dynamic> Icon;
-   final String text;
-   final Color color;
-  const CustomSliverAppbar({super.key, required this.Icon, required this.text, required this.color});
+class CustomSliverAppBar extends StatelessWidget {
+  final String heading;
+  final List<dynamic> Iconn;
+  final Color colors;
+  const CustomSliverAppBar({super.key, required this.heading, required this.Iconn, required this.colors,  });
 
   @override
   Widget build(BuildContext context) {
-    return SliverAppBar(
-      title: Row(
-        children: [
-          Text(text),
-
-        ],
-      ),
-    );
+    return CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            // backgroundColor: Colors.blue[900],
+            backgroundColor: colors,
+            title: Text(heading,style: GoogleFonts.aboreto(color: Colors.white),),
+            actions:  [
+              ...Iconn,
+            ],
+          )]);
   }
 }
