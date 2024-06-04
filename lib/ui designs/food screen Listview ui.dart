@@ -19,7 +19,7 @@ class _FoodScreenState extends State<FoodScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.yellow,
+
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -286,7 +286,7 @@ class _FoodScreenState extends State<FoodScreen> {
                 ),
                 // *********************************************
                 const Divider(),
-                ListView.builder(
+           ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemCount: 10,
@@ -389,7 +389,7 @@ class _FoodScreenState extends State<FoodScreen> {
                     ));
                   },
                 )
-              ],
+     ],
             ),
           ),
         ],
