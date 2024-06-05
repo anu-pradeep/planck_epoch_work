@@ -46,7 +46,8 @@ class GridViewFoodApp extends StatelessWidget {
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
-            )
+            ),
+
           ],
           elevation: 0,
           bottom: AppBar(

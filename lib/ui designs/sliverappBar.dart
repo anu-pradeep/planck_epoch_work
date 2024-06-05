@@ -12,7 +12,6 @@ class CustomSliverAppBar extends StatelessWidget {
     return CustomScrollView(
         slivers: [
           SliverAppBar(
-            // backgroundColor: Colors.blue[900],
             backgroundColor: colors,
             title: Text(heading,style: GoogleFonts.aboreto(color: Colors.white),),
             actions:  [
