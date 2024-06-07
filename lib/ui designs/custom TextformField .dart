@@ -4,7 +4,11 @@ class CustomTextField extends StatefulWidget {
   final String label;
   final bool iconVisible;
 
-  const CustomTextField({super.key, required this.label, required this.iconVisible, });
+  const CustomTextField({
+    super.key,
+    required this.label,
+    required this.iconVisible,
+  });
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -21,13 +25,10 @@ class _CustomTextFieldState extends State<CustomTextField> {
           color: Colors.lightBlue,
         ),
         labelText: widget.label,
-        labelStyle: TextStyle(
-            color: Colors.lightBlue[100], fontSize: 10),
+        labelStyle: TextStyle(color: Colors.lightBlue[100], fontSize: 10),
         hintText: widget.label,
-        hintStyle: TextStyle(
-            color: Colors.lightBlue[50], fontSize: 10),
-        border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(150)),
+        hintStyle: TextStyle(color: Colors.lightBlue[50], fontSize: 10),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(150)),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(25.0),
           borderSide: const BorderSide(color: Colors.blue),
@@ -37,7 +38,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           borderSide: const BorderSide(color: Colors.blue),
         ),
         suffixIcon: Visibility(
-          visible: widget.iconVisible ==true,
+          visible: widget.iconVisible == true,
           child: IconButton(
             onPressed: () {
               setState(() {
@@ -48,17 +49,16 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 }
               });
             },
-            icon: Icon(showPass == true
-                ? Icons.visibility_off
-                : Icons.visibility),
+            icon: Icon(
+                showPass == true ? Icons.visibility_off : Icons.visibility),
             color: Colors.lightBlue,
           ),
         ),
       ),
     );
-
   }
 }
+
 class Sample extends StatelessWidget {
   const Sample({super.key});
 

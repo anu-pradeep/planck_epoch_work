@@ -36,40 +36,40 @@ class LoginState extends State<Login> {
                           fontSize: 30, color: Colors.lightBlue[900]),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Padding(
-                    padding: EdgeInsets.only(right: 280),
+                    padding: const EdgeInsets.only(right: 280),
                     child: Text("Please sign in to continue",
                         style: GoogleFonts.aBeeZee(
                             fontSize: 15, color: Colors.lightBlue[900])),
                   ),
-                  Padding(
+                  const Padding(
                     padding:
                         EdgeInsets.only(top: 20, left: 20, right: 20),
                   child: CustomTextField(label: "user name", iconVisible: false,),
 
                   ),
-                  SizedBox(height: 25),
-                  Padding(
+                  const SizedBox(height: 25),
+                  const Padding(
                     padding: EdgeInsets.only(left: 20, right: 20),
                     child:CustomTextField(label: "password",iconVisible: true,)
 
                   ),
-                  SizedBox(height: 25),
+                  const SizedBox(height: 25),
                   Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 50),
+                        padding: const EdgeInsets.only(left: 50),
                         child: Text(
                           "Remember me next time",
                           style: GoogleFonts.aBeeZee(
                               fontSize: 13, color: Colors.lightBlue[900]),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 200,
                       ),
-                      Image(
+                      const Image(
                         image: NetworkImage(
                             "https://cdn-icons-png.flaticon.com/512/8532/8532409.png"),
                         height: 35,
@@ -77,7 +77,7 @@ class LoginState extends State<Login> {
                       )
                     ],
                   ),
-                  SizedBox(height: 25),
+                  const SizedBox(height: 25),
                   const SizedBox(
                     width: 400,
                     child:CustomElevatedButtons(text: "Sign in", color: Colors.lightBlue)
@@ -92,11 +92,11 @@ class LoginState extends State<Login> {
                     //   ),
                     // ),
                   ),
-                  SizedBox(height: 25),
+                  const SizedBox(height: 25),
                   TextButton(
                       onPressed: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (ctxt) => Register()));
+                            MaterialPageRoute(builder: (ctxt) => const Register()));
                       },
                       child: Text(
                         "Don't have account.? Sign Up",

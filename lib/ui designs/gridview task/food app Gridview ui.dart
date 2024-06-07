@@ -152,7 +152,6 @@ class GridViewFoodApp extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-
           ],
           elevation: 0,
           bottom: AppBar(
@@ -298,8 +297,7 @@ class GridViewFoodApp extends StatelessWidget {
             ),
           ),
         ),
-        body:
-        GridView(
+        body: GridView(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2),
             children: [

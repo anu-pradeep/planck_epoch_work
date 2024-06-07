@@ -21,9 +21,17 @@ class RegisterState extends State<Register> {
             child: Form(
                 key: formkey,
                 child: Column(children: [
-                  CustomAppBar(name: "register", Icon: [Icon(Icons.search),
-                    SizedBox(width: 10,),
-                    Icon(Icons.account_box_rounded)], color: Colors.cyan,),
+                  const CustomAppBar(
+                    name: "register",
+                    Icon: [
+                      Icon(Icons.search),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Icon(Icons.account_box_rounded)
+                    ],
+                    color: Colors.cyan,
+                  ),
                   const Image(
                       image: NetworkImage(
                           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhMZxaknowE4DkGwaUx-kpyrcIGbVkJxTSA&s")),
@@ -44,9 +52,10 @@ class RegisterState extends State<Register> {
                             fontSize: 15, color: Colors.lightBlue[900])),
                   ),
                   const Padding(
-                    padding:
-                        EdgeInsets.only(top: 20, left: 20, right: 20),
-                    child: CustomTextField(label: "Username", iconVisible: false),),
+                    padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+                    child:
+                        CustomTextField(label: "Username", iconVisible: false),
+                  ),
                   //   TextFormField(
                   //     decoration: InputDecoration(
                   //       prefixIcon: const Icon(
@@ -73,16 +82,15 @@ class RegisterState extends State<Register> {
                   //   ),
                   // ),
                   const Padding(
-                    padding:
-                        EdgeInsets.only(top: 20, left: 20, right: 20),
-                    child:CustomTextField(label: 'Mobile number',iconVisible: false,)
-                  ),
+                      padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+                      child: CustomTextField(
+                        label: 'Mobile number',
+                        iconVisible: false,
+                      )),
                   const SizedBox(height: 25),
                   Padding(
                     padding: const EdgeInsets.only(left: 20, right: 20),
-                    child:
-
-                    TextFormField(
+                    child: TextFormField(
                       obscureText: showpass,
                       obscuringCharacter: "*",
                       decoration: InputDecoration(
