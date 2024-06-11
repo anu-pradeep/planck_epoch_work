@@ -22,7 +22,8 @@ class _FoodScreenState extends State<FoodScreen> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            title: Row(
+            title:
+            Row(
               children: [
                 const Icon(
                   Icons.arrow_back,
@@ -56,7 +57,8 @@ class _FoodScreenState extends State<FoodScreen> {
               [
                 Padding(
                   padding: const EdgeInsets.only(left: 20, top: 20),
-                  child: Row(
+                  child:
+                  Row(
                     children: [
                       Container(
                         decoration: BoxDecoration(
@@ -214,7 +216,8 @@ class _FoodScreenState extends State<FoodScreen> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 220),
-                      child: Container(
+                      child:
+                      Container(
                           decoration: BoxDecoration(
                             color: Colors.grey[200],
                             border: Border.all(color: Colors.black26),

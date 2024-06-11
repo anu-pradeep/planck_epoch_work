@@ -8,58 +8,61 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Horizontal ListView Example',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Horizontal ListView Example'),
+          title: const Text('CustomScrollView with GridView'),
         ),
-        body: Center(
-          child: HorizontalListView(),
-        ),
-      ),
-    );
-  }
-}
+        body: CustomScrollView(
+          slivers: [
+            const SliverAppBar(
+              pinned: true,
+              expandedHeight: 150.0,
+              flexibleSpace: FlexibleSpaceBar(
+                title: Padding(
+                  padding: EdgeInsets.only(top: 50,right: 80),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text('GridView Example',style: TextStyle(fontSize: 05),),SizedBox(width: 20,)
+                          ,Text('GridView Example',style: TextStyle(fontSize: 05),),SizedBox(width: 20,)
+                          ,Text('GridView Example',style: TextStyle(fontSize: 05),),SizedBox(width: 20,)
+                          ,Text('GridView Example',style: TextStyle(fontSize: 05),),SizedBox(width: 20,)
+                          ,Text('GridView Example',style: TextStyle(fontSize: 05),),SizedBox(width: 20,)
 
-class HorizontalListView extends StatelessWidget {
-  final List<String> items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-    'Item 5',
-    'Item 6',
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 200, // Set the height of the ListView
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal, // Set scroll direction to horizontal
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return Container(
-            width: 150, // Set the width of each item
-            margin: const EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-              color: Colors.blueAccent,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Center(
-              child: Text(
-                items[index],
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text('GridView Example',style: TextStyle(fontSize: 05),),
+                        ],
+                      ),SizedBox(width: 20,),
+                    ],
+                  ),
                 ),
               ),
             ),
-          );
-        },
+            SliverGrid(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, // Number of columns
+                mainAxisSpacing: 10.0,
+                crossAxisSpacing: 10.0,
+                childAspectRatio: 1.0,
+              ),
+              delegate: SliverChildBuilderDelegate(
+                    (BuildContext context, int index) {
+                  return Container(
+                    color: Colors.teal[100 * (index % 9)],
+                    child: Center(
+                      child: Text('Item $index'),
+                    ),
+                  );
+                },
+                childCount: 20, // Number of items in the grid
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

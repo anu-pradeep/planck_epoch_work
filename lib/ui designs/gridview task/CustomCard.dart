@@ -39,21 +39,27 @@ class CustomCards extends StatelessWidget {
             style: GoogleFonts.abrilFatface(
                 fontSize: 10, fontWeight: FontWeight.bold),
           ),
-          Text(
-            textt2,
-            style: GoogleFonts.abel(fontSize: 12),
+          Padding(
+            padding: const EdgeInsets.only(left: 05),
+            child: Text(
+              textt2,
+              style: GoogleFonts.abel(fontSize: 12),
+            ),
           ),
           const SizedBox(
             height: 05,
           ),
           Row(
             children: [
-              Text(
-                textt3,
-                style: GoogleFonts.abel(
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.green),
+              Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  textt3,
+                  style: GoogleFonts.abel(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green),
+                ),
               ),
               const SizedBox(
                 width: 100,

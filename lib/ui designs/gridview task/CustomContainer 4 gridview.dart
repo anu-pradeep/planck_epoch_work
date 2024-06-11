@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainer extends StatefulWidget {
@@ -22,10 +21,9 @@ class _CustomContainerState extends State<CustomContainer> {
           Radius.circular(20),
         ),
       ),
-      height: 35,
+      height: 30,
       child: Row(
         children: [
-          // Image(image: NetworkImage(widget.containerImages as String),),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.network(
@@ -34,7 +32,6 @@ class _CustomContainerState extends State<CustomContainer> {
               width: 30,
             ),
           ),
-
           Padding(
             padding: const EdgeInsets.only(right: 08),
             child: Text(
