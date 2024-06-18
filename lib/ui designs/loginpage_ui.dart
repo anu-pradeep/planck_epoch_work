@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:planck_epoch_works/ui%20designs/custom TextformField .dart';
-import 'package:planck_epoch_works/ui%20designs/custom%20Appbar.dart';
-import 'package:planck_epoch_works/ui%20designs/custom%20elevatedbutton.dart';
+import 'package:planck_epoch_works/custom%20widgets/custom%20TextformField%20.dart';
+import 'package:planck_epoch_works/custom%20widgets/custom%20Appbar.dart';
+import 'package:planck_epoch_works/custom%20widgets/custom%20elevatedbutton.dart';
 import 'package:planck_epoch_works/ui%20designs/registration%20page.dart';
 
 class Login extends StatefulWidget {

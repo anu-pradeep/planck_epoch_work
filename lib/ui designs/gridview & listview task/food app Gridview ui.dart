@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:planck_epoch_works/ui%20designs/gridview%20task/CustomCard.dart';
-
+import 'CustomCard.dart';
 import 'CustomContainer 4 gridview.dart';
 
 void main() {
