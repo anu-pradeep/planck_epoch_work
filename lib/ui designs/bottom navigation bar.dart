@@ -19,7 +19,8 @@ class BottomNavigation extends State<bottom> {
       appBar: AppBar(
         title: Text(
           "Bottom Navigation Bar",
-          style: TextStyle(fontWeight: FontWeight.w600,color: Colors.blue[900]),
+          style:
+              TextStyle(fontWeight: FontWeight.w600, color: Colors.blue[900]),
         ),
         backgroundColor: Colors.blue[200],
       ),

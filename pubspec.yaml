@@ -38,6 +38,7 @@ dependencies:
   google_fonts:
   carousel_slider:
   staggered_grid_view_flutter:
+  alert_dialog:
 
 dev_dependencies:
   flutter_test:
