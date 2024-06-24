@@ -31,17 +31,17 @@ class _MyHomePageState extends State<MyHomePage> {
             title: Text('Account'),
             content: Center(
               child: Text('Account'),
-            )),
+            ),isActive: true),
         const Step(
             title: Text('Address'),
             content: Center(
               child: Text('Address'),
-            )),
+            ),isActive: true),
         const Step(
             title: Text('Confirm'),
             content: Center(
               child: Text('Confirm'),
-            ))
+            ),isActive: true)
       ];
   @override
   Widget build(BuildContext context) {
